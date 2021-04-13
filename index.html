@@ -17,6 +17,16 @@
       padding: 0;
     }
 
+    .background {
+      max-width: 1440px;
+      margin: 0 auto;
+      border: 2px solid black;
+      background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat;
+      background-position: -70% 70%, 200% 0%;
+      background-color: #19A1AD;
+    }
+
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -29,31 +39,33 @@
 </head>
 
 <body>
-  <div class="profile-card">
-    <header></header>
-    <div class="photo"><img src="images/image-victor.jpg" alt="Victor's portrait"></div>
-    <div class="personality">
-      <p> Victor Crest <span class="age">26</span></p>
-      <p class="city">London</p>
+  <div class="background">
+    <div class="profile-card">
+      <header></header>
+      <div class="photo"><img src="images/image-victor.jpg" alt="Victor's portrait"></div>
+      <div class="personality">
+        <p> Victor Crest <span class="age">26</span></p>
+        <p class="city">London</p>
+      </div>
+      <div class="about">
+        <div class="block">
+          <p class="number">80K</p>
+          <p class="descripion">Followers</p>
+        </div>
+        <div class="block">
+          <p class="number">803K</p>
+          <p class="descripion">Likes</p>
+        </div>
+        <div class="block">
+          <p class="number">1.K</p>
+          <p class="descripion">Photos</p>
+        </div>
+      </div>
     </div>
-    <div class="about">
-      <div class="block">
-        <p class="number">80K</p>
-        <p class="descripion">Followers</p>
-      </div>
-      <div class="block">
-        <p class="number">803K</p>
-        <p class="descripion">Likes</p>
-      </div>
-      <div class="block">
-        <p class="number">1.K</p>
-        <p class="descripion">Photos</p>
-      </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Malgorzata Kowacka</a>.
     </div>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
 

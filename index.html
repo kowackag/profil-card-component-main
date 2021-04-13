@@ -21,6 +21,7 @@
 
     body {
       background-color: #0E0E0E;
+      /* overflow: hidden; */
     }
 
     html {
@@ -30,7 +31,7 @@
 
     .background {
       position: relative;
-      max-width: 1440px;
+      width: 1440px;
       height: 720px;
       margin-top: calc(50vh - 720px/2);
       margin-left: calc(50vw - 1440px/2);
@@ -120,6 +121,59 @@
 
     .attribution a {
       color: hsl(228, 45%, 44%);
+    }
+
+    @media (max-width:1440px) {
+      .background {
+        width: 100vw;
+        height: 720px;
+        margin-top: calc(50vh - 720px/2);
+        margin-left: 0;
+      }
+    }
+
+    @media (max-height:720px) {
+      .background {
+        height: 100vh;
+        margin-top: 0;
+      }
+
+      .attribution {
+        display: none;
+      }
+    }
+
+    @media (max-width:360px) {
+      .profile-card {
+        width: 95vw;
+      }
+    }
+
+    @media (max-height:360px) {
+      .profile-card {
+        height: 95vh;
+        padding-top: 200px;
+      }
+
+      .personality {
+        padding-bottom: 5px;
+      }
+    }
+
+    @media (max-height:320px) {
+      .profile-card {
+        height: 95vh;
+        padding-top: 190px;
+      }
+
+      .profile-card img {
+        top: 70px;
+      }
+
+      .personality {
+        padding-bottom: 0px;
+        line-height: 100%;
+      }
     }
   </style>
 </head>
